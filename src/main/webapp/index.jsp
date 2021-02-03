@@ -8,12 +8,13 @@
 
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600" type="text/css" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
-	
+	  
+<!-- SERVER SIDE CALLBACK
     <meta name="salesforce-community" content="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>">
     <meta name="salesforce-client-id" content="<%= System.getenv("SALESFORCE_CLIENT_ID") %>">
     <meta name="salesforce-redirect-uri" content="https://<%= System.getenv("SALESFORCE_HEROKUAPP_URL") %>/_callback">
     <meta name="salesforce-mode" content="<%= System.getenv("SALESFORCE_MODE") %>">
-    <meta name="salesforce-server-callback" content="false">
+    <meta name="salesforce-server-callback" content="true">
     <meta name="salesforce-namespace" content="">
     <meta name="salesforce-target" content="#sign-in-link">
     <meta name="salesforce-save-access-token" content="true">
@@ -26,7 +27,20 @@
     <meta name="salesforce-cache-max-age" content="60">
     <meta name="salesforce-allowed-domains" content="<%= System.getenv("SALESFORCE_HEROKUAPP_URL") %>">
     <meta name="salesforce-save-access-token" content="true">
-    
+-->
+	  
+<!-- CLIENT SIDE CALLBACK -->
+    <meta name="salesforce-community" content="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>">
+    <meta name="salesforce-client-id" content="<%= System.getenv("SALESFORCE_CLIENT_ID") %>">
+    <meta name="salesforce-mode" content="<%= System.getenv("SALESFORCE_MODE") %>">
+    <meta name="salesforce-save-access-token" content="true">
+    <meta name="salesforce-allowed-domains" content="<%= System.getenv("SALESFORCE_HEROKUAPP_URL") %>">
+    <meta name="salesforce-redirect-uri" content="https://<%= System.getenv("SALESFORCE_HEROKUAPP_URL") %>/_callback">
+    <meta name="salesforce-target" content="#sign-in-link">
+    <meta name="salesforce-login-handler" content="onLogin">
+    <meta name="salesforce-logout-handler" content="onLogout">
+<!-- -->
+
 	  
 
     <link href="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>/servlet/servlet.loginwidgetcontroller?type=css" rel="stylesheet" type="text/css" />
