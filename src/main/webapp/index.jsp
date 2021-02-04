@@ -130,12 +130,18 @@
 
 	
 	<script>
-
+	
+	console.log('page loaded');
+	
 
 	function onLogin(identity) {
 		
 		
 		window.alert('onlogin called');
+		
+		console.log('identity==' + identity);
+		console.log('window.location.href==' + window.location.href);
+		
 		
 		
 		var targetDiv = document.querySelector(SFIDWidget.config.target);	
