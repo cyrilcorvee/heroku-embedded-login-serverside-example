@@ -11,13 +11,21 @@
 	  
     <meta name="salesforce-community" content="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>">
     <meta name="salesforce-client-id" content="<%= System.getenv("SALESFORCE_CLIENT_ID") %>">
-    <meta name="salesforce-mode" content="<%= System.getenv("SALESFORCE_MODE") %>">
-    <meta name="salesforce-save-access-token" content="true">
-    <meta name="salesforce-allowed-domains" content="<%= System.getenv("SALESFORCE_HEROKUAPP_URL") %>">
     <meta name="salesforce-redirect-uri" content="https://<%= System.getenv("SALESFORCE_HEROKUAPP_URL") %>/_callback">
+    <meta name="salesforce-mode" content="<%= System.getenv("SALESFORCE_MODE") %>">
+    <meta name="salesforce-server-callback" content="true">
+    <meta name="salesforce-namespace" content="">
     <meta name="salesforce-target" content="#sign-in-link">
+    <meta name="salesforce-save-access-token" content="true">
+    <meta name="salesforce-forgot-password-enabled" content="<%= System.getenv("SALESFORCE_FORGOT_PASSWORD_ENABLED") %>">
+    <meta name="salesforce-self-register-enabled" content="<%= System.getenv("SALESFORCE_SELF_REGISTER_ENABLED") %>">
     <meta name="salesforce-login-handler" content="onLogin">
-    <meta name="salesforce-logout-handler" content="onLogout">	  
+    <meta name="salesforce-logout-handler" content="onLogout">
+    <meta name="salesforce-mask-redirects" content="false">
+    <meta name="salesforce-use-min-js" content="false">
+    <meta name="salesforce-cache-max-age" content="60">
+    <meta name="salesforce-allowed-domains" content="<%= System.getenv("SALESFORCE_HEROKUAPP_URL") %>">
+    <meta name="salesforce-save-access-token" content="true">
 
     <link href="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>/servlet/servlet.loginwidgetcontroller?type=css" rel="stylesheet" type="text/css" />
     <script src="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>/servlet/servlet.loginwidgetcontroller?type=javascript_widget&min=false&cacheMaxAge=60" async defer></script>
