@@ -25,7 +25,6 @@
     <meta name="salesforce-use-min-js" content="false">
     <meta name="salesforce-cache-max-age" content="60">
     <meta name="salesforce-allowed-domains" content="<%= System.getenv("SALESFORCE_HEROKUAPP_URL") %>">
-    <meta name="salesforce-save-access-token" content="true">
 
     <link href="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>/servlet/servlet.loginwidgetcontroller?type=css" rel="stylesheet" type="text/css" />
     <script src="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>/servlet/servlet.loginwidgetcontroller?type=javascript_widget&min=false&cacheMaxAge=60" async defer></script>
