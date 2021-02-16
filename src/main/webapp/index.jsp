@@ -262,7 +262,7 @@
 	}
 		
 	function local_login() {
-		SFIDWidget.config.authorizeURL = SFIDWidget.config.authorizeURL +  'language=fr_FR';
+		SFIDWidget.config.authorizeURL = SFIDWidget.config.authorizeURL +  '&language=fr_FR';
 		SFIDWidget.login();
 	}
 
