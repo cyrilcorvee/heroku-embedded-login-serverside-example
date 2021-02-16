@@ -32,6 +32,10 @@
   
   <body>
   	<div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;"></div>
+	  
+	  <div id="sign-in-link-bis" style="position: absolute; top: 20px;right: 20px;">
+		  <button id="sfid-login-button" class="sfid-button" onclick="local_login()">Login2</button>
+	  </div>
     <header>
       <div class="masthead-elements-row-1">
         <div class="element-left"></div>
@@ -255,6 +259,11 @@
 		chemex.href = "#";
 		chemex.innerHTML = 'Login for more info';
 
+	}
+		
+	function local_login() {
+		SFIDWidget.config.authorizeURL = SFIDWidget.config.authorizeURL +  'language=fr_FR';
+		SFIDWidget.login();
 	}
 
 
