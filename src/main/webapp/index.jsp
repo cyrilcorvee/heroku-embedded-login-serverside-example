@@ -27,7 +27,7 @@
     <meta name="salesforce-allowed-domains" content="<%= System.getenv("SALESFORCE_HEROKUAPP_URL") %>">
 
     <link href="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>/servlet/servlet.loginwidgetcontroller?type=css" rel="stylesheet" type="text/css" />
-    <script src="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>/servlet/servlet.loginwidgetcontroller?type=javascript_widget&min=false&cacheMaxAge=60" async defer></script>
+    <script src="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>/servlet/servlet.loginwidgetcontroller?type=javascript_widget&locale=fr&min=false&cacheMaxAge=60" async defer></script>
   </head>
   
   <body>
